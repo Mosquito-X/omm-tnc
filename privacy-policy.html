@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Privacy Policy — One More Meal</title>
+  <style>
+    :root { --cream:#fff8eb; --ink:#201711; --orange:#ef5a3c; --green:#5f7048; --muted:#726861; --line:#dfd3c1; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--cream); color:var(--ink); font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    main { width:min(760px,calc(100% - 40px)); margin:0 auto; padding:72px 0 96px; }
+    header { border-bottom:2px solid var(--ink); padding-bottom:28px; margin-bottom:42px; }
+    .brand { color:var(--orange); font-size:.82rem; font-weight:900; letter-spacing:.14em; text-transform:uppercase; }
+    h1 { font-size:clamp(2.6rem,8vw,5rem); line-height:.96; letter-spacing:-.055em; margin:14px 0 20px; }
+    h2 { color:var(--green); font-size:1.35rem; line-height:1.25; margin:42px 0 12px; }
+    p, li { max-width:70ch; }
+    a { color:var(--orange); font-weight:700; }
+    table { width:100%; border-collapse:collapse; margin:20px 0; font-size:.95rem; }
+    th, td { border-top:1px solid var(--line); padding:14px 10px; text-align:left; vertical-align:top; }
+    th { color:var(--green); }
+    .meta { color:var(--muted); }
+    .notice { border:1px solid var(--orange); padding:16px 18px; margin:24px 0; }
+    footer { border-top:1px solid var(--line); margin-top:54px; padding-top:22px; color:var(--muted); }
+    @media (max-width:600px) { table,tbody,tr,th,td { display:block; } th { padding-bottom:0; } td { border-top:0; padding-top:4px; } tr { border-top:1px solid var(--line); padding:8px 0; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">OMM Studio</div>
+    <h1>Privacy Policy</h1>
+    <p class="meta"><strong>One More Meal</strong><br>Effective and last updated: October 1, 2026</p>
+  </header>
+
+  <div class="notice"><strong>Before publishing:</strong> replace <strong>[PRIVACY CONTACT EMAIL]</strong> below and make sure “OMM Studio” exactly matches the developer name shown on Google Play.</div>
+
+  <p>One More Meal (“OMM,” “the app,” “we,” “us,” or “our”) is a nearby restaurant decision app published by OMM Studio. This Privacy Policy explains what information the app accesses, how it is used, what remains on your device, and what is sent to Google services.</p>
+
+  <h2>1. What the app accesses and collects</h2>
+  <table>
+    <tr><th>Information</th><th>What happens</th></tr>
+    <tr>
+      <td>Approximate or precise location</td>
+      <td>After you choose to start a meal and grant Android location permission, OMM accesses your foreground location to search for nearby restaurants. The app does not request background location.</td>
+    </tr>
+    <tr>
+      <td>Derived search areas</td>
+      <td>OMM converts your location into a reusable area and generates search sample coordinates. Area centres and sample coordinates are stored locally on your device to reduce duplicate restaurant searches. OMM does not keep a chronological history of your raw location readings.</td>
+    </tr>
+    <tr>
+      <td>Google Maps Platform technical data</td>
+      <td>The Google Places and Maps SDKs may automatically collect request metadata, device metadata, IP address, crash metrics, SDK-specific identifiers, latitude/longitude coordinates used for requests, and map interaction events. Google describes this collection in its SDK disclosure documentation and processes it under the Google Privacy Policy.</td>
+    </tr>
+    <tr>
+      <td>Restaurant decision bookkeeping</td>
+      <td>OMM stores Google Place IDs and app-owned data such as discovery status, refresh attempts, active-session state, and session-level offer, rejection, acceptance, and temporary suppression counters. This data is kept only on your device.</td>
+    </tr>
+  </table>
+
+  <p>OMM does not ask for your name, email address, phone number, contacts, photos, advertising ID, or a user account. OMM does not contain advertising or an OMM-operated analytics service.</p>
+
+  <h2>2. How information is used</h2>
+  <ul>
+    <li>To find restaurants near your current location.</li>
+    <li>To display a restaurant result and an embedded Google map.</li>
+    <li>To reduce repeated Google Places requests and improve restaurant variety.</li>
+    <li>To restore an unfinished meal session after the app is closed.</li>
+    <li>To diagnose and improve Google Maps Platform SDK reliability, as described by Google.</li>
+  </ul>
+
+  <h2>3. Google Maps Platform</h2>
+  <p>OMM includes Google Maps and Google Places features and content. Location coordinates and request information are transmitted to Google when those services are used. Google may use and retain data to provide and improve its products and services. Google’s handling of that data is governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>4. Information stored on your device</h2>
+  <p>OMM keeps the following local information so it can work without remembering more about you than necessary:</p>
+  <ul>
+    <li>Google Place IDs, but not long-term copies of restaurant names, ratings, review counts, opening hours, business status, or other Google Places business details;</li>
+    <li>reusable area centres, generated sampling coordinates, radius-harvest records, and refresh/failure bookkeeping;</li>
+    <li>an unfinished meal session, including an internal session ID, area reference, roll count, and selected Place ID;</li>
+    <li>aggregate session-level offer, rejection, and acceptance counters used for temporary soft suppression;</li>
+    <li>your accepted legal-document version and local quota/cooldown state.</li>
+  </ul>
+  <p>Current restaurant details returned by Google, including name, rating, review count, coordinates, opening information, business status, and type, are held in memory for the current app session and are not written to OMM’s long-term restaurant database.</p>
+
+  <h2>5. Retention and deletion</h2>
+  <p>Restaurant details held in memory are discarded when the app process ends. Discovery records are refreshed on OMM’s configured cache cycle, currently approximately 30 days; refreshing may replace sampling and area-to-restaurant records, but it does not guarantee that every local record is deleted after exactly 30 days. Temporary restaurant suppression decays after approximately 30 days.</p>
+  <p>OMM has no user accounts and no OMM-operated server containing your data. You can delete all OMM-controlled local data at any time by clearing the app’s storage in Android settings or uninstalling the app. Revoking Android location permission prevents future location access. Data received by Google is retained or anonymised according to Google’s policies.</p>
+
+  <h2>6. Sharing and sale</h2>
+  <p>OMM transmits location and request information to Google Maps Platform only as needed to provide nearby restaurant and map features. OMM does not sell your personal or sensitive information and does not share it with advertisers or data brokers.</p>
+
+  <h2>7. Security</h2>
+  <p>OMM limits its own storage to on-device app data and relies on Android application sandboxing. Google states that the Places SDK encrypts collected data in transit using HTTPS. No method of storage or transmission is completely secure, so absolute security cannot be guaranteed.</p>
+
+  <h2>8. Your choices</h2>
+  <ul>
+    <li>You may deny or revoke location permission in Android settings. OMM’s nearby restaurant feature will not work without a usable location.</li>
+    <li>You may clear OMM’s storage or uninstall the app to remove OMM-controlled local data.</li>
+    <li>You may stop using the app at any time.</li>
+  </ul>
+
+  <h2>9. Children</h2>
+  <p>OMM is a general-audience app and is not directed to children under 13. Do not list OMM as a child-directed app without first reviewing the Google Play Families requirements and the Google Maps Platform restrictions that apply to child-directed services.</p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>We may update this Privacy Policy when the app, its data practices, or legal requirements change. The updated version will be posted at this location with a new “last updated” date. Where required, the app will ask you to review the updated terms before continuing.</p>
+
+  <h2>11. Contact</h2>
+  <p>Questions or privacy requests may be sent to:</p>
+  <p><strong>OMM Studio</strong><br>Email: <a href="mailto:[PRIVACY CONTACT EMAIL]">[PRIVACY CONTACT EMAIL]</a></p>
+
+  <footer>
+    <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+  </footer>
+</main>
+</body>
+</html>
